@@ -36,7 +36,7 @@ export default function Home() {
           <div className="absolute inset-1 rounded-full bg-white dark:bg-gray-950 flex items-center justify-center overflow-hidden">
             {/* Replace with your own image */}
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src="/profile.png"
               alt="Profile"
               width={300}
               height={300}
