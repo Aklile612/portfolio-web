@@ -431,13 +431,13 @@ export default function Home() {
                         <label htmlFor="name" className="text-sm font-medium">
                           Your Name
                         </label>
-                        <Input id="name" name="name" placeholder="John Doe" required />
+                        <Input id="name" name="name" placeholder="Your Name..." required />
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium">
                           Your Email
                         </label>
-                        <Input id="email" name="email" type="email" placeholder="john@example.com" required />
+                        <Input id="email" name="email" type="email" placeholder="aklile@example.com" required />
                       </div>
                     </div>
 
