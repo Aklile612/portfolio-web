@@ -134,42 +134,64 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-16 bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</h2>
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">About Me</h2>
 
-          <div className=" gap-12 items-center">
-            
-            
+    <div className="relative border-l-2 border-dotted border-purple-500 dark:border-purple-400 pl-10 space-y-16">
+      
+      {/* Timeline Box */}
+      <div className="relative">
+        {/* Dot aligned with card */}
+        <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 dark:bg-purple-400 rounded-full shadow-md"></div>
 
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Who am I?</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-              As a student currently striving for excellence, I enjoy working behind the scenes to build systems that are efficient, scalable, and reliable. My curiosity about how things work under the hood is what drives me to explore the logic, structure, and performance of web applications.
-
-              I am currently focused on learning backend technologies, databases, and algorithms to strengthen my problem-solving skills. I'm passionate about clean code, optimized performance, and creating solutions that can handle real-world challenges.
-              </p>
-
-              <h3 className="text-2xl font-semibold pt-4">My Journey</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-              My journey in tech is just beginning, and while I have not achieved major milestones yet, I am working hard to build a strong foundation. I started exploring backend development out of a deep curiosity for how systems work and interact behind the scenes. Since then, I have been teaching myself the basics, practicing regularly, and slowly gaining confidence in my skills.
-
-              Being a student in Information Science has helped me understand the bigger picture of technology, and I'm now focused on turning that knowledge into practical skills. I believe in learning through consistency and patience, and even though I am not where I want to be yet, I am committed to the journey ahead.
-              </p>
-
-              <h3 className="text-2xl font-semibold pt-4">Education</h3>
-              <ul className="list-disc pl-5 text-gray-600 dark:text-gray-400">
-                <li>Degree, Addis Ababa (2023-2027)</li>
-               
-              </ul>
-
-              <h3 className="text-2xl font-semibold pt-4">Interests</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Outside of tech, I enjoy spending time on activities that help me relax and stay inspired. I love listening to music, exploring new ideas through reading or watching documentaries, and having meaningful conversations with friends. I also enjoy learning new things beyond my field, whether it's about personal growth, creativity, or how the world works. These moments outside of coding help me stay balanced and motivated in my learning journey.
-              </p>
-            </div>
-          </div>
+        <div className="bg-gray-100 dark:bg-purple-800/40 p-6 rounded-lg shadow-md w-full max-w-xl">
+          <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-3">Who am I?</h3>
+          <p className="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+            As a student currently striving for excellence, I enjoy working behind the scenes to build systems that are efficient, scalable, and reliable...
+          </p>
         </div>
-      </section>
+      </div>
+
+      {/* Timeline Box */}
+      <div className="relative">
+        <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 dark:bg-purple-400 rounded-full shadow-md"></div>
+
+        <div className="bg-gray-100 dark:bg-purple-800/40 p-6 rounded-lg shadow-md w-full max-w-xl">
+          <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-3">My Journey</h3>
+          <p className="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+            My journey in tech is just beginning... I'm now focused on turning that knowledge into practical skills.
+          </p>
+        </div>
+      </div>
+
+      {/* Timeline Box */}
+      <div className="relative">
+        <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 dark:bg-purple-400 rounded-full shadow-md"></div>
+
+        <div className="bg-gray-100 dark:bg-purple-800/40 p-6 rounded-lg shadow-md w-full max-w-xl">
+          <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-3">Education</h3>
+          <ul className="list-disc pl-5 text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+            <li>Degree, Addis Ababa (2023–2027)</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Timeline Box */}
+      <div className="relative">
+        <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-purple-500 dark:bg-purple-400 rounded-full shadow-md"></div>
+
+        <div className="bg-gray-100 dark:bg-purple-800/40 p-6 rounded-lg shadow-md w-full max-w-xl">
+          <h3 className="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-3">Interests</h3>
+          <p className="text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+            Outside of tech, I enjoy listening to music, reading, watching documentaries, and having deep conversations...
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Work Section */}
       <section id="work" className="py-16">
