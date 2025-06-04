@@ -86,7 +86,7 @@ export default function Home() {
               <a href="#contact">Contact Me</a>
             </Button>
             <Button variant="outline" className="transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-110" >
-              <a href="/resume.pdf" download>
+              <a href="/aklile.ansa.pdf" download>
                 Download CV
               </a>
             </Button>
@@ -180,6 +180,62 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
+
+            {/* Project 3 */}
+            <a href="#" className="group">
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="aspect-video relative">
+                  <Image
+                    src="/reminder.png"
+                    alt="Reminder App"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
+                  <div className="group container flex flex-row gap-4">
+
+                    <a href="https://github.com/Aklile612/Reminder-App" target="_blank" aria-label="GitHub" rel="noreferrer">
+                    <Github className="w-6 h-6 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 hover:scale-110 transition-all" />
+                    </a>
+                    <span>Reminder App</span>
+                    </div>
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    I designed this web app to students to help them with acadamic calander. I designed the front-end with <span className="font-bold text-blue-400">React</span> and the backend with <span className="font-bold text-blue-400">Node.js</span> and for the Data-base <span className="font-bold text-blue-400">Mongodb</span>. It was designed to help students manage the acadamic calander with the remider based on the day set.
+                  </p>
+                </CardContent>
+              </Card>
+            </a>
+
+            {/* Project 4 */}
+            <a href="#" className="group">
+              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <div className="aspect-video relative">
+                  <Image
+                    src="/abe.png"
+                    alt="Project Title 4"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
+                  <div className="group container flex flex-row gap-4">
+
+                    <a href="https://github.com/Aklile612/Abe-Garage" target="_blank" aria-label="GitHub" rel="noreferrer">
+                    <Github className="w-6 h-6 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 hover:scale-110 transition-all" />
+                    </a>
+                    <span>Abe Garage</span>
+                  </div>
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    I have done while I was learing Evangadi project and this is the Front end of the app
+                  </p>
+                </CardContent>
+              </Card>
+            </a>
             {/* Project 1 */}
             <a href="#" className="group">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
@@ -235,61 +291,7 @@ export default function Home() {
               </Card>
             </a>
 
-            {/* Project 3 */}
-            <a href="#" className="group">
-              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-                <div className="aspect-video relative">
-                  <Image
-                    src="/reminder.png"
-                    alt="Reminder App"
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
-                  <div className="group container flex flex-row gap-4">
-
-                    <a href="https://github.com/Aklile612/Reminder-App" target="_blank" aria-label="GitHub" rel="noreferrer">
-                    <Github className="w-6 h-6 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 hover:scale-110 transition-all" />
-                    </a>
-                    <span>Reminder App</span>
-                    </div>
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Short description of the project. What technologies you used and what problem it solves.
-                  </p>
-                </CardContent>
-              </Card>
-            </a>
-
-            {/* Project 4 */}
-            <a href="#" className="group">
-              <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-                <div className="aspect-video relative">
-                  <Image
-                    src="/abe.png"
-                    alt="Project Title 4"
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
-                  <div className="group container flex flex-row gap-4">
-
-                    <a href="https://github.com/Aklile612/Abe-Garage" target="_blank" aria-label="GitHub" rel="noreferrer">
-                    <Github className="w-6 h-6 text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 hover:scale-110 transition-all" />
-                    </a>
-                    <span>Abe Garage</span>
-                  </div>
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Short description of the project. What technologies you used and what problem it solves.
-                  </p>
-                </CardContent>
-              </Card>
-            </a>
+            
           </div>
         </div>
       </section>
