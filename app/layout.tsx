@@ -9,15 +9,15 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aklile Ansa - Portfolio",
+  title: "Aklile Ansa",
   description: "Personal portfolio website showcasing my work and skills",
   openGraph: {
     images: [
       {
-        url: '/evangadi.svg', // Place your image inside the public folder
+        url: '/fav-icon.png', // Place your image inside the public folder
         width: 1200,
         height: 630,
-        alt: 'Aklile Ansa Portfolio Preview',
+        alt: 'Aklile Ansa',
       },
     ],
   },
