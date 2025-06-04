@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import {
   Github,
@@ -21,6 +22,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Typewriter } from "react-simple-typewriter"
 
 
 export default function Home() {
@@ -51,9 +53,33 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">
             Aklile Ansa
           </h1>
-          <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">I'm an IS student</h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-lg mb-6">
-            I specialize in [Backend]. My expertise in [Node.js]
+          <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Full-Stack Developer</h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-fit mb-6 text-xl">
+            I build scalable backend systems, automate workflows, and create responsive frontends with React. My
+            expertise in{" "}
+            <span className="text-blue-500 font-mono">
+              <Typewriter
+                words={[
+                  "Express.js",
+                  "Node.js",
+                  "TypeScript",
+                  "API Design",
+                  "MongoDb",
+                  "Nest.js",
+                  "React",
+                  "Tailwind Css",
+                  "Python",
+                  "Next.js",
+                  
+                ]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </p>
           <div className="flex gap-4 justify-center md:justify-start  ">
             <Button asChild className="bg-blue-500 hover:bg-blue-600 transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-110">
@@ -291,7 +317,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Backend Development</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["Node.js", "Express", "Python", "Django", "PHP"].map((skill, index) => (
+                  {["Node.js", "Express", "Nest.js","Next.js" ].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
                       {skill}
@@ -309,7 +335,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Database</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["MySQL", "PostgreSQL", "MongoDB", "Redis", "Firebase"].map((skill, index) => (
+                  {["MySQL", "PostgreSQL", "MongoDB", "Firebase"].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-purple-500 rounded-full"></span>
                       {skill}
@@ -319,42 +345,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            {/* Skill Category 4 */}
-            <Card className="hover:shadow-md transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Settings className="w-6 h-6 text-orange-500" />
-                  <h3 className="text-xl font-semibold">DevOps</h3>
-                </div>
-                <ul className="space-y-2">
-                  {["Docker", "Kubernetes", "CI/CD", "Jenkins", "GitHub Actions"].map((skill, index) => (
-                    <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            
 
-            {/* Skill Category 5 */}
-            <Card className="hover:shadow-md transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <Cloud className="w-6 h-6 text-sky-500" />
-                  <h3 className="text-xl font-semibold">Cloud Services</h3>
-                </div>
-                <ul className="space-y-2">
-                  {["AWS", "Azure", "Google Cloud", "Heroku", "Vercel"].map((skill, index) => (
-                    <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-sky-500 rounded-full"></span>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-
+            
             {/* Skill Category 6 */}
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
@@ -363,7 +356,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Web Services</h3>
                 </div>
                 <ul className="space-y-2">
-                  {["RESTful APIs", "GraphQL", "WebSockets", "Microservices"].map((skill, index) => (
+                  {["RESTful APIs"].map((skill, index) => (
                     <li key={index} className="text-gray-600 dark:text-gray-400 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span>
                       {skill}
